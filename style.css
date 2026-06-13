@@ -1,56 +1,55 @@
-body{
+body {
     font-family: Arial, sans-serif;
-    background:#f4f4f4;
-    margin:0;
-    padding:20px;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
 }
 
-.container{
-    max-width:800px;
-    margin:auto;
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
 }
 
-h1{
-    text-align:center;
+h1 {
+    text-align: center;
+    color: #333;
 }
 
-.input-section{
-    display:flex;
-    gap:10px;
-    margin-bottom:20px;
+.form {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-input{
-    flex:1;
-    padding:10px;
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
 }
 
-button{
-    padding:10px 15px;
-    cursor:pointer;
+button {
+    padding: 10px;
+    background: #2d6cdf;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
-table{
-    width:100%;
-    border-collapse:collapse;
+button:hover {
+    background: #1b4fb3;
 }
 
-th, td{
-    border:1px solid #ddd;
-    padding:10px;
-    text-align:center;
+.job {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 6px solid #2d6cdf;
+    border-radius: 6px;
 }
 
-.present{
-    color:green;
-    font-weight:bold;
-}
-
-.absent{
-    color:red;
-    font-weight:bold;
+.status {
+    font-weight: bold;
 }

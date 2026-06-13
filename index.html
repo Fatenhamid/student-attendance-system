@@ -3,32 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Attendance System</title>
+    <title>Smart Job Tracker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
-        <h1>Student Attendance System</h1>
+        <h1>💼 Smart Job Tracker</h1>
 
-        <div class="input-section">
-            <input type="text" id="studentName" placeholder="Enter Student Name">
-            <button onclick="addStudent()">Add Student</button>
+        <div class="form">
+            <input type="text" id="company" placeholder="Company Name">
+            <input type="text" id="position" placeholder="Job Position">
+            <input type="date" id="date">
+
+            <select id="status">
+                <option value="Applied">Applied</option>
+                <option value="Interview">Interview</option>
+                <option value="Accepted">Accepted</option>
+                <option value="Rejected">Rejected</option>
+            </select>
+
+            <button onclick="addJob()">Add Job</button>
         </div>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Student Name</th>
-                    <th>Status</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody id="studentTable"></tbody>
-        </table>
+        <div class="stats">
+            <p>Total Jobs: <span id="total">0</span></p>
+        </div>
+
+        <div id="jobList"></div>
     </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>
